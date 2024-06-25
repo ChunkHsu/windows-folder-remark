@@ -5,7 +5,7 @@
 本工具可以在 Windows 下给文件夹添加备注，源码版本支持的版本为 Python 3.x
 
 ## 使用方式
-下载`release`下面的`remark`压缩包
+下载`releases`下面的`remark`压缩包
 1. 需要先打开文件夹的备注标签
    
    ![image](https://github.com/ChunkHsu/windows-folder-remark/assets/92206375/f3d7308e-0713-441d-a514-209dc34a5936)
