@@ -72,3 +72,7 @@ def check_and_add_to_registry():
     
     except Exception as e:
         show_message("Error", f"Failed to add to registry: {e}")
+        
+        
+if __name__ == "__main__":
+    check_and_add_to_registry()
