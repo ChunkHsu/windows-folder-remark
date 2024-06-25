@@ -2,7 +2,6 @@
 # Filename: comment.py
 """ 在原有的代码基础上添加图形化界面, 且仅只能通过右键或者拖拽文件夹到exe上添加备注 """
 
-__author__ = 'Piratf'
 
 import sys
 import os
