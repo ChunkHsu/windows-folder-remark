@@ -110,7 +110,11 @@ def get_user_input(fpath, original_comment=""):
     root.title(f"输入 {Path(fpath).name} 文件夹备注:")
     
     # 设置窗口图标
-    root.iconbitmap('logo.ico')
+    icon_path = os.path.join(os.path.dirname(sys.executable), 'logo.ico')
+    if os.path.exists(icon_path):
+        root.iconbitmap(icon_path)
+    else:
+        print(f"Icon file not found: {icon_path}")
     
     # 创建Text控件用于输入
     text = Text(root,width=40,height=10,font=('宋体',14))

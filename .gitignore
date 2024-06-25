@@ -4,3 +4,4 @@ build
 assert
 dist
 noconsole/dist_v
+dist-v
