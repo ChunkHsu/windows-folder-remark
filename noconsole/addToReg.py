@@ -1,5 +1,6 @@
 """ 添加到注册表  """
 import os
+import sys
 import winreg as reg
 
 import tkinter as tk
@@ -15,8 +16,9 @@ def show_message(title, message):
 
 def check_and_add_to_registry():
     """ 检查是否已经添加到注册表，如果没有则添加 """
-    # 获取当前脚本所在的路径
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # 获取当前执行的 exe 文件所在的路径
+    exe_path = sys.executable  # 获取当前执行的 exe 文件路径
+    current_dir = os.path.dirname(exe_path)  # 获取 exe 文件所在的目录
     exe_path = os.path.join(current_dir, 'remark.exe')
     
     # 注册表路径
