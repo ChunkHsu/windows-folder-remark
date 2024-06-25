@@ -1,3 +1,5 @@
 .idea
 *.spec
 build
+assert
+dist
